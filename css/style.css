@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(160, 233, 177);
+    z-index: 10;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo{
+    width: 140px;
+    margin-left: 20px;
+}
+
+.bar-btn{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0, 0, 0, .95);
+    text-align: center;
+    transition: all .5s;
+    z-index: 10;
+}
+
+.menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.menu li a{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.menu li a.activate, .menu li a:hover{
+    color: rgb(248, 8, 8);
+    transition: .3s;
+    
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .menu{
+    height: 100vh;
+}
+
+#check:checked ~ .menu li{
+display: block;
+
+}
+
+
+section h3{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+
+.divarticle{
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 25px;
+}
+
+.divflex{
+    background-color: aliceblue;
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    margin-left: 2.5%;
+
+}
+
+
+.videosclass{   
+    width: 640px;
+    height: 360px;
+    margin-left: 10%;
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+
+P{
+    width: 640px;
+    margin-left: 10%;
+    position: relative; 
+    margin: auto;
+    padding-bottom: 25px;
+}
+
+@media screen and (min-width: 821px){
+   .logo{
+       margin-left: 50px;
+
+   }
+
+   nav{
+       height: 100px;
+    position: static;
+   }
+
+   .bar-btn{
+       display: none;
+   }
+
+   .menu{
+       position: relative;
+       height: 100px;
+       top: 0;
+       background: none;
+       transition: none;
+       text-align: right;
+       margin-right: 50px;
+
+    }
+
+    .menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin:  0 20px;
+        transition: none;
+    }
+
+    .menu li a{
+        font-size: 12px;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 1510px){
+
+    .videosclass{   
+        width: 640px;
+        height: 360px;
+        margin-left: 10%;
+        position: relative;
+        display: block;
+        margin: auto;
+    }
+    P{
+        width: 640px;
+    }
+
+    .divflex{
+        background-color: yellow;
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 892px){
+    .videosclass{   
+        width: 470px;
+        height: 360px;
+        margin-left: 10%;
+        position: relative;
+        display: block;
+        margin: auto;
+    }
+
+    p{
+        width: 450px;
+    }
+}
+
+
+@media screen and (max-width: 655px){
+    .videosclass{   
+        width: 370px;
+        height: 360px;
+        margin-left: 10%;
+        position: relative;
+        display: block;
+        margin: auto;
+    }
+
+    p{
+        width: 370px;
+    }
+
+}
+
+@media screen and (max-width: 520px){
+    .videosclass{   
+        width: 290px;
+        height: 360px;
+        margin-left: 10%;
+        position: relative;
+        display: block;
+        margin: auto;
+    }
+    
+    p{
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 394px){
+    .videosclass{   
+        width: 250px;
+        height: 360px;
+        margin-left: 10%;
+        position: relative;
+        display: block;
+        margin: auto;
+    }
+
+    p{
+        width: 170px;
+    }
+
+}
+
+@media screen and (max-width: 282px){
+    .videosclass{   
+        width: 170px;
+        height: 360px;
+        margin-left: 10%;
+        position: relative;
+        display: block;
+        margin: auto;
+    }
+
+    p{
+        width: 170px;
+    }
+
+}
+
